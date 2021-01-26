@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "T:\\Git\\GroupWebsite\\GroupWebsite\\GroupWebsite\\GroupWebsite.csproj": {}
+    "T:\\Git\\GroupAssignment\\GroupWebsite\\GroupWebsite\\GroupWebsite.csproj": {}
   },
   "projects": {
-    "T:\\Git\\GroupWebsite\\GroupWebsite\\GroupWebsite\\GroupWebsite.csproj": {
+    "T:\\Git\\GroupAssignment\\GroupWebsite\\GroupWebsite\\GroupWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\Git\\GroupWebsite\\GroupWebsite\\GroupWebsite\\GroupWebsite.csproj",
+        "projectUniqueName": "T:\\Git\\GroupAssignment\\GroupWebsite\\GroupWebsite\\GroupWebsite.csproj",
         "projectName": "GroupWebsite",
-        "projectPath": "T:\\Git\\GroupWebsite\\GroupWebsite\\GroupWebsite\\GroupWebsite.csproj",
+        "projectPath": "T:\\Git\\GroupAssignment\\GroupWebsite\\GroupWebsite\\GroupWebsite.csproj",
         "packagesPath": "C:\\Users\\Tordl\\.nuget\\packages\\",
-        "outputPath": "T:\\Git\\GroupWebsite\\GroupWebsite\\GroupWebsite\\obj\\",
+        "outputPath": "T:\\Git\\GroupAssignment\\GroupWebsite\\GroupWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tordl\\AppData\\Roaming\\NuGet\\NuGet.Config",
