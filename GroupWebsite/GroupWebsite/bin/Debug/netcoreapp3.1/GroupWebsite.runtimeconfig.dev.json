@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Tordl\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Tordl\\.nuget\\packages"
+    ]
+  }
+}
