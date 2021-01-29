@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\GroupWebsite",
-    "\\GroupWebsite\\GroupWebsite",
-    "\\HTMLfiles"
+    "\\GroupWebsite\\GroupWebsite"
   ],
-  "SelectedNode": "\\HTMLfiles\\nested.html",
+  "SelectedNode": "\\GroupWebsite\\GroupWebsite\\nested.html",
   "PreviewInSolutionExplorer": false
 }
