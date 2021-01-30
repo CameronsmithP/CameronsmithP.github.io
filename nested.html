@@ -1,6 +1,6 @@
 <DOCTYPE html>
 
-    <html>
+    <html lang= "en">
         <style>
             .k-section {
                 background-color: lavender;
@@ -21,6 +21,24 @@
                 font-size: 16pt;
                 font-style:oblique;
             }
+            .k-table {
+                border-style: solid;
+                border-color:black;
+            
+            }
+            .k-hbox {
+                text-align: center;
+                border-style: solid;
+            }
+            .k-box {
+                border-style: solid;
+            }
+            .k-footer {
+                text-align: center;
+                border-style: dotted;
+                border-color:darkslategrey;
+                font-size: 20pt;
+            }
 
 
 
@@ -35,15 +53,17 @@
 
     <!-- KALLISTA -->
     <div class="k-section">
+
         <h1 class="k-header">Pointless websites to keep you busy</h1>
+
         <ol>
             <li>
                 <h3 class="k-subheadings">Want to discover new music?</h3>
                 <h4 class="k-h4"> Try out <a href="https://www.gnoosic.com/faves.php"><strong>Gnoosic!</strong></a></h4>
                     <p>
-                        <img height= 200px, width= 200px src="https://cdn.ilovefreesoftware.com/wp-content/uploads/2015/08/gnoosic-music-bands-450x415.jpg">
+                        <img height= 200px, width= 200px src="https://cdn.ilovefreesoftware.com/wp-content/uploads/2015/08/gnoosic-music-bands-450x415.jpg" alt= "You're not cool enough to see me...">
                         <br>
-                        Gnoosic uses your top 3 fav. bands to help you find new artists! Even if the new artists are crappy, it's always fun to hear new music.
+                        Gnoosic uses your top 3 fav. bands to help you find new artists! Even if the new artists are <em>crappy</em>, it's always fun to hear new music.
                     </p>
 
             </li>
@@ -52,7 +72,7 @@
                 <h3 class="k-subheadings">How about play a lil game?</h3>
                 <h4 class="k-h4">Try out <a href="http://www.flashbynight.com/drench/"><strong>Drench!</strong></a></h4>
                     <p>
-                        <img height= 200px, width= 200px src="https://4.bp.blogspot.com/_SqhhJb_P3Kk/SvSM6ogfWKI/AAAAAAAAJ5Q/TKFGE1i5F-Q/w1200-h630-p-k-no-nu/Drench+flash+game.jpg">
+                        <img height= 200px, width= 200px src="https://4.bp.blogspot.com/_SqhhJb_P3Kk/SvSM6ogfWKI/AAAAAAAAJ5Q/TKFGE1i5F-Q/w1200-h630-p-k-no-nu/Drench+flash+game.jpg" alt= "You're not cool enough to see me...">
                         <br>
                         Drench is a super simple game, where you simply have to get the entire board to be one color before your moves run out! It's oddly addictive.
                     </p>
@@ -60,9 +80,9 @@
 
             <li>
                 <h3 class="k-subheadings">Maybe go on an adventure?</h3>
-                <h4 class= "k-h4">Try out <a href="https://www.mapcrunch.com/">Map Crunch</a></h4>
+                <h4 class= "k-h4">Try out <a href="https://www.mapcrunch.com/"><strong>Map Crunch</strong></a></h4>
                     <p>
-                        <img height= 200px, width= 200px src="https://www.mapcrunch.com/images/screen.png">
+                        <img height= 200px, width= 200px src="https://www.mapcrunch.com/images/screen.png" alt="You're not cool enough to see me...">
                         <br>
                         Map Crunch drops you in a random place on earth using google maps, letting you explore spaces you never even knew existed! We might not be able to travel as much due to COVID, but that doesn't mean we can't see the world!
 
@@ -71,19 +91,61 @@
 
             <li>
                 <h3 class ="k-subheadings">Or even vent into a black hole?</h3>
-                <h4 class="k-h4">Try out<a href="https://screamintothevoid.com/">Scream into the Void</a></h4>
+                <h4 class="k-h4">Try out<a href="https://screamintothevoid.com/"><strong> Scream into the Void</strong></a></h4>
                     <p>
-                        <img height= 200px, width= 200px src="https://img.huffingtonpost.com/asset/561238bd1400005b00bfc0fe.jpeg?cache=9gj1c9maqa&ops=scalefit_630_noupscale">
+                        <img height= 200px, width= 200px src="ttps://img.huffingtonpost.com/asset/561238bd1400005b00bfc0fe.jpeg?cache=9gj1c9maqa&ops=scalefit_630_noupscale" alt="You're not cool enough to see me :(">
                         <br>
                         Can't afford a counselor? Well Scream into the Void is the website for you! You can type out your problems before sending them into a black hole, never having to worry about them again!
                     </p>
             </li>
-
-
         </ol>
+        
+        <h4 class="k-h4">Website Ranks</h4>
+
+        <p> I know you definitely weren't wondering what I ranked the websites, but I needed another nested element so you're welcome!
+            <table class="k-table">
+                <thead>
+                    <tr>
+                        <th class="k-hbox">Rank</th>
+                        <th class="k-hbox">Website</th>
+                        <th class="k-hbox">Reasoning</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="k-box">Num #1</td>
+                        <td class="k-box">Gnoosic</td>
+                        <td class="k-box">Always fun to listen to new music.</td>
+                    </tr>
+                    <tr>
+                        <td class="k-box">Num #2</td>
+                        <td class="k-box">Scream into the Void</td>
+                        <td class="k-box">Very theraputic.</td>
+                    </tr>
+                    <tr>
+                        <td class="k-box">Num #3</td>
+                        <td class="k-box">Drench</td>
+                        <td class="k-box">Very fun, but number 3 because I sometimes lose.</td>
+                    </tr>
+                    <tr>
+                        <td class="k-box">Num #4</td>
+                        <td class="k-box">Map Crunch</td>
+                        <td class="k-box">Makes me sad because I can't travel.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+
+        <footer class="k-footer">
+            <h5>Creator: Kallista Cushman</h5>
+            <h6>Here's my website: <a href="#"><s>JK I DON'T HAVE A WEBSITE</s></a></h6>
+        </footer>
+
         <hr/>
+
     </div>
     <!-- KALLISTA -->
+    
     <!--CAMERON-->
     <h1>Websites you will enjoy X9000!!!</h1>
 
