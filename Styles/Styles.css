@@ -1,0 +1,46 @@
+.header{
+  padding:10px;
+  height:40%;
+  max-height:250px;
+  min-height: 200px;
+
+/*  background-color: rgba(255, 0, 0, 0.5);
+  background-image: */
+}
+.footer{
+  padding:10px;
+  height:100px;
+  min-height: 100px;
+  max-height:150px;
+background-color: rgba(107, 107, 107, 0.794);
+}
+.row{
+  display: flex;
+
+}
+
+.column{
+  flex: 1;
+  padding: 20px;
+  height: 400px;
+  width:200px;
+  background-color: #aaa;
+
+
+}
+  #Cameron.column {
+    background-image: url("https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: white;
+
+  /*display:block;*/
+
+}
+
+
+@media(max-width: 500px){
+  .row{
+    flex-direction: column;
+  }
+  }
