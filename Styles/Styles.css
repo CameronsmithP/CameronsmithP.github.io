@@ -37,10 +37,17 @@ background-color: rgba(107, 107, 107, 0.794);
   /*display:block;*/
 
 }
+#CameronePage.HTML{
+  background-image: url("https://media.giphy.com/media/3oGRFvAHIY8cDgX1rG/giphy.gif");
+  background-size:cover;
+  background-repeat: no-repeat;
 
 
-@media(max-width: 500px){
+}
+
+
+/*@media(max-width: 500px){
   .row{
     flex-direction: column;
   }
-  }
+  }*/
