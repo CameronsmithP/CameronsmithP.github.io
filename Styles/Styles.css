@@ -24,7 +24,7 @@ background-color: rgba(107, 107, 107, 0.794);
   padding: 20px;
   height: 400px;
   width:200px;
-  background-color: #aaa;
+  background-color: hsla(89, a3%, 51%, 0.9);
 
 
 }
@@ -32,22 +32,284 @@ background-color: rgba(107, 107, 107, 0.794);
     background-image: url("https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png");
       background-size: contain;
       background-repeat: no-repeat;
+      flex: 1;
+      padding: 20px;
+      height: 400px;
+      width:200px;
       background-color: white;
 
   /*display:block;*/
 
 }
+/*
+#CameroneBody.Body{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  min-height:1;
+}
+*/
+.Cameronscontainer{
+  position relative;
+  display:flex;
+  justify-content:center;
+  max-width:1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.CameronsCard{
+  position:relative;
+  width:280px;
+  height:400px;
+  margin:30px;
+  box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius:15px;
+  background:rgba: rgba(255, 255, 255, 0.1);
+  overflow:hidden;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-top:1px solid rgba(255,255,255,0.5);
+  border-Left:1px solid rgba(255,255,255,0.5);
+  backdrop-filter:blur(5px);
+
+}
+
+.Cameronscontent{
+  padding: 20px;
+  text-align: center;
+  transition:0.5;
+  transform:translateY(100px);
+  opacity:0;
+  transition: 0.5s;
+
+
+}
+.Cameronscontainer.Cameronscard:hover.Cameronscontent{
+  transform:translateY(0px);
+  opacity:1;
+}
+
+.Cameronscontainer.Cameronscard.Cameronscontent h2{
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  front-size: 8em;
+  color: rgba(255,255,255,0.05);
+  pointer-events:none;
+}
+.Cameronscontainer.Cameronscard.Cameronscontent h3{
+  font-size:1.8em;
+  color:#fff;
+  z-index:1;
+}
+.Cameronscontainer.Cameronscard.Cameroncontent p{
+  font-size: 1em;
+  color:#fff;
+  font-wieght:30o;
+
+}
+.Cameronscontainer.Cameronscard.Cameronscontent a{
+  position:relative;
+  display:inline-block;
+  padding:8px 20px;
+  margin-top:15;
+  background-attachment:#fff;
+  color:#000;
+  border-radius:20px;
+  text-decoration:none;
+  font-weight:500;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+#CameronePage.column{
+  background-color: hsla(112, 100%, 23%, 0.28);
+
+
+
+  /*  display:block;*/
+  width:20%;
+  height:auto;
+    flex: 1;
+
+    height: 400px;
+    width:200px;
+
+
+
+
+}
+
+ #PictureD{
+  width:20%;
+  height:auto;
+
+}
+
+/*  background-color: hsla(112, 100%, 23%, 0.28);*/
+
+
 #CameronePage.HTML{
-  background-image: url("https://media.giphy.com/media/3oGRFvAHIY8cDgX1rG/giphy.gif");
+  background-image: url("https://media.giphy.com/media/dI3D3BWfDub0Q/giphy.gif");
   background-size:cover;
   background-repeat: no-repeat;
 
+
+
+}
+.IndexHTML{
+
+  margin:0;
+  padding:0;
+  font-family:'Poppins',sans-serif;
+
+
+}
+.Indexbody{
+background-image: url("https://media.giphy.com/media/UxTZDNv0Zej4s/giphy.gif");
+
+  display"flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+.container{
+  position: relative;
+  z-index:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin:40px 0;
+}
+.container .card{
+
+  position: relative;
+  width:300px;
+  height:400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  backdrop-filter:blur(10px);
+}
+
+.container .card .content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity:0.5;
+  transition:0.5s;
+
+}
+.container .card:hover .content{
+  opacity:1;
+  transform: translateY(-20px);
+}
+
+.container .card .content .imgBx{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  overflow:hidden;
+  border:10px solid rgba(0,0,0,0.25);
+
+}
+
+.container .card .content .imgBx img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 1;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  align-content: center;
+}
+
+.container .card .content .contentBx h3{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin:20px 0 10px;
+  line-height: 1.1em;
+}
+ .container .card .content .contentBx h3 span{
+   font-size:12px;
+   font-weight: 300;
+   text-transform: initial;
+
+ }
+
+ .container .card .sci{
+   align-content: center;
+   position:  absolute;
+   bottom: 50px;
+   display: flex;
+
+ }
+
+ .container .card .sci li{
+
+   list-style: none;
+   margin: 0 10px;
+
+   transform: translateY(40px);
+   transition:0.5s;
+   opacity:0;
+
+   transition-delay: calc(0.1s * var(--i))
+ }
+
+ .container .card:hover .sci li{
+   transform: translateY(0px);
+   opacity:1;
+ }
+
+ .container .card .sci li a{
+align-items: center;
+padding-right: 50px;
+   color: #fff;
+   font-size: 24px;
+ }
+
+
+
+h2.CameronsAttributesH2{
+
+}
+p.CameronsAttributesP{
+
+}
+iframe.CameronsAttributesIframe{
+
+}
+br.CameronsAttributesBR{
 
 }
 
 
 /*@media(max-width: 500px){
   .row{
+    position:center;
     flex-direction: column;
   }
   }*/
