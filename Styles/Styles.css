@@ -162,6 +162,33 @@ background-color: rgba(107, 107, 107, 0.794);
 
 
 }
+
+
+
+/* !Davids Tags!*/
+#DavidPage.HTML{
+  background-image: url("https://media.giphy.com/media/eNq1z1ecRi2YM/giphy.gif");
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+  
+}
+.DavidTitle{
+  color: white;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50pt;
+}
+  .DavidContent{
+   
+    
+  
+  
+  }
+
+/* !Davids Tags!*/
+
+
 .IndexHTML{
 
   margin:0;
