@@ -163,6 +163,7 @@ justify-content: center;
 
 #CameronePage.HTML{
   background-image: url("https://media.giphy.com/media/dI3D3BWfDub0Q/giphy.gif");
+
   background-size:cover;
   background-repeat: no-repeat;
 
@@ -237,7 +238,7 @@ background-size: cover;
     padding:40px;
     text-align: center;
 
-    margin: auto;
+    margin:auto;
 
     color: white;
     font-family: 'Century Gothic',sans-serif;
@@ -377,6 +378,83 @@ padding-right: 50px;
    color: #fff;
    font-size: 24px;
  }
+ .animationC{
+   position: fixed;
+
+ }
+ .Cameron-animation{
+
+  animation: CamsText linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: CamsText linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: CamsText linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: CamsText linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: CamsText linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes CamsText{
+  0% {
+    overflow: hidden;
+    transform:  translate(-302px,0px)  ;
+  }
+  100% {
+    overflow: hidden;
+    transform:  translate(1800px,1px)  ;
+  }
+}
+
+@-moz-keyframes CamsText{
+  0% {
+    overflow: hidden;
+    -moz-transform:  translate(-302px,0px)  ;
+  }
+  100% {
+    overflow: hidden;
+    -moz-transform:  translate(1800px,1px)  ;
+  }
+}
+
+@-webkit-keyframes CamsText {
+  0% {
+    overflow: hidden;
+    -webkit-transform:  translate(-302px,0px)  ;
+  }
+  100% {
+    overflow: hidden;
+    -webkit-transform:  translate(1800px,1px)  ;
+  }
+}
+
+@-o-keyframes CamsText {
+  0% {
+    overflow: hidden;
+    -o-transform:  translate(-302px,0px)  ;
+  }
+  100% {
+    overflow: hidden;
+    -o-transform:  translate(1800px,1px)  ;
+  }
+}
+
+@-ms-keyframes CamsText {
+  0% {
+    overflow: hidden;
+    -ms-transform:  translate(-302px,0px)  ;
+  }
+  100% {
+    overflow: hidden;
+    -ms-transform:  translate(1800px,1px)  ;
+  }
+}
  .nav{
 
 position: fixed;
@@ -385,6 +463,8 @@ left:0%;
 right:0%;
 overflow: hidden;
  }
+ /* I organized the nav bar to stick to the browser window through the CSS sheet
+ however David wrote the code to make the nav bar through inline style */
  .nav ul {
 
    list-style-type: none;
@@ -435,6 +515,13 @@ display:inline-block;
    border-Left:1px solid rgba(255,255,255,0.5);
    backdrop-filter:blur(5px);
 }*/
+.cameronDIVA{
+
+  margin-top: 2%;
+}
+.cameronDIVT{
+margin-top: 2%;
+}
 .CameronsArticle{
 
 
