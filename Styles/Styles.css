@@ -16,18 +16,25 @@ background-color: rgba(107, 107, 107, 0.794);
 }
 .row{
   display: flex;
-
+height: 500px;
 }
 
 .column{
-  flex: 1;
+
+  /*padding: 20px;*/
+/*  height: 400px;
+  width:200px;*/
+
+flex-grow:1;
+align-items: center;
+justify-content: center;
   padding: 20px;
-  height: 400px;
+  height: 500px;
   width:200px;
-  background-color: hsla(89, a3%, 51%, 0.9);
 
 
 }
+
   #Cameron.column {
     background-image: url("https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png");
       background-size: contain;
@@ -170,8 +177,8 @@ background-color: rgba(107, 107, 107, 0.794);
   background-image: url("https://media.giphy.com/media/eNq1z1ecRi2YM/giphy.gif");
   background-size:cover;
   background-repeat: no-repeat;
-  
-  
+
+
 }
 .DavidTitle{
   color: white;
@@ -180,15 +187,16 @@ background-color: rgba(107, 107, 107, 0.794);
   font-size: 50pt;
 }
   .DavidContent{
-   
-    
-  
-  
+
+
+
+
   }
 
-/* !Davids Tags!*/
 
+/*^^^^ !Davids Tags! ^^^^*/
 
+/* Camerons tags */
 .IndexHTML{
 
   margin:0;
@@ -209,6 +217,53 @@ background-size: cover;
 
 
 }
+.Cameronbody #BodyC{
+  margin: 0;
+   padding: 0;
+/*  justify-content:center;
+  align-items:center;
+  display"flex;
+
+  flex-wrap:wrap;
+background-size: cover;
+  background-repeat: no-repeat; */
+
+
+}
+.CameronsBx{
+  width: 1000px;
+  height: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding:40px;
+    text-align: center;
+
+    margin: auto;
+
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+}
+.CamPortrait{
+  border-width:thick;
+  border-radius: 30%;
+
+  border-color: rgba(57, 146, 52, 1);
+    border-style: ridge;
+  width: 200px;
+  height: 200px;
+align-content: center;
+}
+/*.CPortrait img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 1;
+  width: 100%;
+  height:100%;
+  vertical-align: middle;
+  object-fit: cover;
+  align-content: center;
+
+}*/
 .container{
   position: relative;
   z-index:1;
@@ -238,6 +293,7 @@ background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-direction: column;
   opacity:0.5;
   transition:0.5s;
@@ -246,15 +302,19 @@ background-size: cover;
 .container .card:hover .content{
   opacity:1;
   transform: translateY(-20px);
+
 }
 
 .container .card .content .imgBx{
   position:relative;
+  justify-content:center;
+  align-items: center;
   width:150px;
   height:150px;
   border-radius:50%;
   overflow:hidden;
   border:10px solid rgba(0,0,0,0.25);
+
 
 }
 
@@ -317,19 +377,80 @@ padding-right: 50px;
    color: #fff;
    font-size: 24px;
  }
+ .nav{
+
+position: fixed;
+top:0;
+left:0%;
+right:0%;
+overflow: hidden;
+ }
+ .nav ul {
+
+   list-style-type: none;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+ }
+
+ .nav li {
+display:inline-block;
+
+
+ }
+
+ .nav li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
 
 
 
-h2.CameronsAttributesH2{
+ .nav li a:hover:not(.active) {
+   background-color: #111;
+ }
+ .active{
+         background-color:#4CAF50;
+ }
+
+ /*.CameronsBio #cambio{
+
+   position:relative;
+   width:280px;
+   height:400px;
+   margin:30px;
+   box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5);
+   border-radius:15px;
+   background:rgba: rgba(255, 255, 255, 0.1);
+   overflow:hidden;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   border-top:1px solid rgba(255,255,255,0.5);
+   border-Left:1px solid rgba(255,255,255,0.5);
+   backdrop-filter:blur(5px);
+}*/
+.CameronsArticle{
+
 
 }
-p.CameronsAttributesP{
+
+
+.CameronsAttributesH2 h2{
 
 }
-iframe.CameronsAttributesIframe{
+.CameronsAttributesP p{
 
 }
-br.CameronsAttributesBR{
+.CameronsAttributesIframe iframe{
+
+}
+.CameronsAttributesBR br{
 
 }
 
@@ -341,8 +462,8 @@ br.CameronsAttributesBR{
   }
   }*/
 
+/*Camerons Tags ^^^^^*/
 
-  
 /* KALLISTA'S STYLING */
 .k-bg {
   background-image: url(https://data.whicdn.com/images/334233362/original.gif);
@@ -351,12 +472,13 @@ br.CameronsAttributesBR{
   background-attachment:fixed;
   height: 100%;
   width: 100%;
- 
+
 }
 
 .k-bodyblur {
   background: url(https://iphone6papers.com/wp-content/uploads/papers.co-sh16-white-gray-gradation-blur-33-iphone6-wallpaper.jpg);
   background-repeat: none;
+  background:cover;
   border-radius: .5rem;
   background-size: 100%;
   filter: blur(50%);
@@ -376,7 +498,7 @@ br.CameronsAttributesBR{
   height: 65rem;
   margin-bottom: 1%;
   overflow: hidden;
-  
+
 }
 
 .k-name {
