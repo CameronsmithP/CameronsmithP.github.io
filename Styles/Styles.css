@@ -552,14 +552,70 @@ margin-top: 2%;
 /*Camerons Tags ^^^^^*/
 
 /* KALLISTA'S STYLING */
+
+    /*website styling*/
+    .k-section {
+      margin-top: 2%;
+        background-color: lavender;
+    }
+    .k-header {
+      border-style:double;
+      border-color: black;
+      border-width:.5em;
+      background-color: darkslategrey;
+      text-align: center;
+      padding: 1em;
+      color: white;
+  }
+  .k-subheadings {
+      font-size: 18pt;
+  }
+  .k-h4 {
+      font-size: 16pt;
+      font-style:oblique;
+  }
+  .k-table {
+      border-style: solid;
+      border-color:black;
+
+  }
+  .k-hbox {
+      text-align: center;
+      border-style: solid;
+  }
+  .k-box {
+      border-style: solid;
+  }
+  .k-footer {
+      text-align: center;
+      border-style: dotted;
+      border-color:darkslategrey;
+      font-size: 20pt;
+  }
+  .k-entireformat {
+    text-align: center;
+    background:tan;
+    font-weight: 200;
+}
+.k-blockquote {
+    border-style: solid;
+    padding: -10em;
+    margin-right:22em;
+    margin-left: 22em;
+}
+.k-h1 {
+    font-family:cursive;
+    font-size:50pt;
+
+}
+    /*website styling*/
+
+    /*personal page*/
 .k-bg {
   background-image: url(https://data.whicdn.com/images/334233362/original.gif);
   background-repeat:no-repeat;
-  background-size:100%;
+  background-size:cover;
   background-attachment:fixed;
-  height: 100%;
-  width: 100%;
-
 }
 
 .k-bodyblur {
@@ -571,7 +627,7 @@ margin-top: 2%;
   filter: blur(50%);
   opacity: .9;
   justify-content: center;
-  margin: 1rem 25%;
+  margin: 2rem 25%;
   height: 65rem;
 
 }
@@ -586,9 +642,10 @@ margin-top: 2%;
   margin-bottom: 1%;
   overflow: hidden;
 
+
 }
 
-.k-name {
+h1.k-name {
   color: white;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -601,16 +658,18 @@ margin-top: 2%;
   margin: 6% 4% 4% 19%;
   padding: 2% 0%;
   background: #041B15;
+ 
 
 }
 
-.k-job {
+p.k-job  {
   text-align: center;
   color: #22AAA1;
   font-size: 18pt;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0% 4% 0% 19%;
   border-bottom: solid black;
+ 
 }
 
 #k-bio {
@@ -619,6 +678,7 @@ margin-top: 2%;
   font-size: 14pt;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 2% 4% 0% 19%;
+ 
 }
 
 #k-image {
@@ -631,9 +691,184 @@ margin-top: 2%;
   border-width: .3rem;
   box-shadow: 5px 5px 3px black;
   position: absolute;
-  top: -3rem;
+  bottom: 1rem;
   left: 17.5rem;
+  
 }
+   /* personal page */
+    /* animation */
+
+    .k-animation {
+      display:flex;
+      margin-top: 4rem;
+      margin-left: 38rem;
+      margin-bottom: 0rem;
+      
+      
+    }
+    .k-animation .pac-man {
+      width: 0px;
+      height: 0px;
+      border-top: 60px solid #136F63;
+      border-right: 60px solid transparent;
+      border-bottom: 60px solid #136F63;
+      border-left: 60px solid #136F63;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      
+  
+  
+      animation-name: pac-eat;
+      animation-duration: .5s;
+      animation-iteration-count: infinite;
+  
+      z-index: 1;
+  
+    }
+    #dot1 {
+        background: black;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin: 2rem;
+        position: relative;
+        
+        
+  
+        animation-name: dot1-disappear;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+  
+    }
+    #dot2 {
+      background: black;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      margin: 2rem;
+      position: relative;
+      
+      
+  
+      animation-name: dot2-disappear;
+      animation-duration: .5s;
+      animation-iteration-count: infinite;
+  
+  }
+  #dot3 {
+      background: black;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      margin: 2rem;
+      position: relative;
+      
+  
+      animation-name: dot3-disappear;
+      animation-duration: .5s;
+      animation-iteration-count: infinite;
+  
+  }
+  
+  @keyframes dot1-disappear {
+      25% {
+          right: 25px;
+          
+          
+      }
+      50% {
+          right: 50px;
+          
+      }
+      75% {
+          right: 75px;
+          
+      }
+      100% {
+          right: 100px;
+          
+          
+      }
+  }
+   @keyframes dot3-disappear {
+          25% {
+              right: 25px;
+              
+          }
+          50% {
+              right: 50px;
+          }
+          75% {
+              right: 75px;
+          }
+          100% {
+              right: 100px
+              
+          }
+      }
+  @keyframes dot2-disappear {
+          25% {
+              right: 25px;
+                  
+          }
+          50% {
+              right: 50px;
+          }
+          75% {
+              right: 75px;
+          }
+          100% {
+              right: 100px
+                  
+          }
+  }
+  @keyframes pac-eat {
+  
+      0% {
+          width: 0px;
+          height: 0px;
+          border-top: 60px solid #136F63;
+          border-right: 60px solid transparent;
+          border-bottom: 60px solid #136F63;
+          border-left: 60px solid #136F63;
+          border-top-left-radius: 60px;
+          border-top-right-radius: 60px;
+          border-bottom-left-radius: 60px;
+          border-bottom-right-radius: 60px;
+      }
+  
+      50% {
+          width: 0px;
+          height: 0px;
+          border-top: 60px solid #136F63;
+          border-right: 60px solid #136F63;
+          border-bottom: 60px solid #136F63;
+          border-left: 60px solid #136F63;
+          border-top-left-radius: 60px;
+          border-top-right-radius: 60px;
+          border-bottom-left-radius: 60px;
+          border-bottom-right-radius: 60px;
+      }
+  
+      100% {
+          width: 0px;
+          height: 0px;
+          border-top: 60px solid #136F63;
+          border-right: 60px solid transparent;
+          border-bottom: 60px solid #136F63;
+          border-left: 60px solid #136F63;
+          border-top-left-radius: 60px;
+          border-top-right-radius: 60px;
+          border-bottom-left-radius: 60px;
+          border-bottom-right-radius: 60px;
+      }
+  
+        
+    }
+  
+    /*  animation */  
 /* KALLISTA'S STYLING */
 /* Matthew's Sylings */
 .mattbc
