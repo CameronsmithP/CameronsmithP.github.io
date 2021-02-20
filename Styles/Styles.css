@@ -54,18 +54,32 @@ height: 500px;
   width:1000px;
   border: 1px solid black;
   margin:20px auto;
-  background-color:#E1E1E1;
+  background-color:#99DF70;
   border-radius:20px;
   border-style:outset;
   border-width:thick;
-  border-image:linear-gradient(45deg, #089E67, #0CFA60, #008709, #309E08, #5E9407);
+  /* border-image:linear-gradient(45deg, #089E67, #0CFA60, #008709, #309E08, #5E9407);*/
   border-image-slice:1;
+  --angle:0deg;
 
+border-image: conic-gradient(from var(--angle), #1CE873, #089E67, #1DF259, #0CFA60, #25DB3E, #008709, #21F21D, #309E08, #6AEB4B) 1;
+animation: 5s rotate  linear infinite;
   box-shadow:10px 10px 10px #89ff00;
   padding:20px;
 
   /*linear-gradient(235deg,#89ff00,#060c21,#00bcd4);*/
 }
+@keyframes rotate{
+  to{
+    --angle:360deg;
+  }
+}
+ @property --angle{
+   syntax:'<angle>';
+   initial-value: 0deg;
+   inherits: false;
+ }
+
 /*{
   position:relative;
   justify-content: center;
@@ -733,7 +747,7 @@ h1.k-name {
   margin: 6% 4% 4% 19%;
   padding: 2% 0%;
   background: #041B15;
- 
+
 
 }
 
@@ -744,7 +758,7 @@ p.k-job  {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0% 4% 0% 19%;
   border-bottom: solid black;
- 
+
 }
 
 #k-bio {
@@ -753,7 +767,7 @@ p.k-job  {
   font-size: 14pt;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 2% 4% 0% 19%;
- 
+
 }
 
 #k-image {
@@ -768,7 +782,7 @@ p.k-job  {
   position: absolute;
   bottom: 1rem;
   left: 17.5rem;
-  
+
 }
    /* personal page */
     /* animation */
@@ -778,8 +792,8 @@ p.k-job  {
       margin-top: 4rem;
       margin-left: 38rem;
       margin-bottom: 0rem;
-      
-      
+
+
     }
     .k-animation .pac-man {
       width: 0px;
@@ -792,15 +806,15 @@ p.k-job  {
       border-top-right-radius: 60px;
       border-bottom-left-radius: 60px;
       border-bottom-right-radius: 60px;
-      
-  
-  
+
+
+
       animation-name: pac-eat;
       animation-duration: .5s;
       animation-iteration-count: infinite;
-  
+
       z-index: 1;
-  
+
     }
     #dot1 {
         background: black;
@@ -809,13 +823,13 @@ p.k-job  {
         width: 50px;
         margin: 2rem;
         position: relative;
-        
-        
-  
+
+
+
         animation-name: dot1-disappear;
         animation-duration: .5s;
         animation-iteration-count: infinite;
-  
+
     }
     #dot2 {
       background: black;
@@ -824,13 +838,13 @@ p.k-job  {
       width: 50px;
       margin: 2rem;
       position: relative;
-      
-      
-  
+
+
+
       animation-name: dot2-disappear;
       animation-duration: .5s;
       animation-iteration-count: infinite;
-  
+
   }
   #dot3 {
       background: black;
@@ -839,38 +853,38 @@ p.k-job  {
       width: 50px;
       margin: 2rem;
       position: relative;
-      
-  
+
+
       animation-name: dot3-disappear;
       animation-duration: .5s;
       animation-iteration-count: infinite;
-  
+
   }
-  
+
   @keyframes dot1-disappear {
       25% {
           right: 25px;
-          
-          
+
+
       }
       50% {
           right: 50px;
-          
+
       }
       75% {
           right: 75px;
-          
+
       }
       100% {
           right: 100px;
-          
-          
+
+
       }
   }
    @keyframes dot3-disappear {
           25% {
               right: 25px;
-              
+
           }
           50% {
               right: 50px;
@@ -880,13 +894,13 @@ p.k-job  {
           }
           100% {
               right: 100px
-              
+
           }
       }
   @keyframes dot2-disappear {
           25% {
               right: 25px;
-                  
+
           }
           50% {
               right: 50px;
@@ -896,11 +910,11 @@ p.k-job  {
           }
           100% {
               right: 100px
-                  
+
           }
   }
   @keyframes pac-eat {
-  
+
       0% {
           width: 0px;
           height: 0px;
@@ -913,7 +927,7 @@ p.k-job  {
           border-bottom-left-radius: 60px;
           border-bottom-right-radius: 60px;
       }
-  
+
       50% {
           width: 0px;
           height: 0px;
@@ -926,7 +940,7 @@ p.k-job  {
           border-bottom-left-radius: 60px;
           border-bottom-right-radius: 60px;
       }
-  
+
       100% {
           width: 0px;
           height: 0px;
@@ -939,11 +953,11 @@ p.k-job  {
           border-bottom-left-radius: 60px;
           border-bottom-right-radius: 60px;
       }
-  
-        
+
+
     }
-  
-    /*  animation */  
+
+    /*  animation */
 /* KALLISTA'S STYLING */
 /* Matthew's Sylings */
 .mattbc
