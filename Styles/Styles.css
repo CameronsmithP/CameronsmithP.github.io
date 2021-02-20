@@ -173,7 +173,7 @@ justify-content: center;
 
 
 
-/* !Davids Tags!*/
+/* !Davids Styling!*/
 #DavidPage.HTML{
   background-image: url("https://media.giphy.com/media/eNq1z1ecRi2YM/giphy.gif");
   background-size:cover;
@@ -182,20 +182,264 @@ justify-content: center;
 
 }
 .DavidTitle{
+  padding-top: 30px;
   color: white;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 50pt;
 }
-  .DavidContent{
+  
+
+#profileimage{
+  height: 650px;
+  width: 500px;
+  margin: 10%;
+  border: #1b6ac5;
+  border-radius: 10px;
+  border-style: bevel;
+  border-width: .3rem;
+  box-shadow: 5px 5px 3px black;
+  position: absolute;
+  top:50px;
+  left:100px;
+  
+}
+
+#d-bio {
+  text-align: right;
+}
+   
+.DavidContentBox{
+  width: 1000px;
+  height: 1000px;
+    background: rgba(0, 0, 0, 0.4);
+    padding:40px;
+    
+
+    margin:auto;
+
+    
+}
+.DavidSubContentBox{
+  width: 25%;
+  height: 50%;
+    background: rgba(87, 151, 28, 0.4);
+    padding: 40px;
+    text-align: right;
+    position: absolute;
+    margin:auto;
+
+    
+
+    color: white;
+    font-family: 'Courier New',monospace;
+    right: 25%;
+    
+}
 
 
+  
+   
 
-
+.dcard-animation{
+    animation: dcard-keyframes linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    -webkit-animation: dcard-keyframes linear 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: dcard-keyframes linear 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: dcard-keyframes linear 1s;
+    -o-animation-iteration-count: 1;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: dcard-keyframes linear 1s;
+    -ms-animation-iteration-count: 1;
+    -ms-transform-origin: 50% 50%;
+  }
+  
+  @keyframes dcard-keyframes{
+    0% {
+      transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    20% {
+      transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    30% {
+      transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    40% {
+      transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    50% {
+      transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    60% {
+      transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    70% {
+      transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    80% {
+      transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    90% {
+      transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+      transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
+    }
+  }
+  
+  @-moz-keyframes dcard-keyframes{
+    0% {
+      -moz-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      -moz-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    20% {
+      -moz-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    30% {
+      -moz-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    40% {
+      -moz-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    50% {
+      -moz-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    60% {
+      -moz-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    70% {
+      -moz-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    80% {
+      -moz-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    90% {
+      -moz-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+      -moz-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
+    }
+  }
+  
+  @-webkit-keyframes dcard-keyframes {
+    0% {
+      -webkit-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      -webkit-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    20% {
+      -webkit-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    30% {
+      -webkit-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    40% {
+      -webkit-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    50% {
+      -webkit-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    60% {
+      -webkit-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    70% {
+      -webkit-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    80% {
+      -webkit-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    90% {
+      -webkit-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+      -webkit-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
+    }
+  }
+  
+  @-o-keyframes dcard-keyframes {
+    0% {
+      -o-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      -o-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    20% {
+      -o-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    30% {
+      -o-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    40% {
+      -o-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    50% {
+      -o-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    60% {
+      -o-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    70% {
+      -o-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    80% {
+      -o-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    90% {
+      -o-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+      -o-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
+    }
+  }
+  
+  @-ms-keyframes dcard-keyframes {
+    0% {
+      -ms-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      -ms-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    20% {
+      -ms-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    30% {
+      -ms-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    40% {
+      -ms-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    50% {
+      -ms-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    60% {
+      -ms-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    70% {
+      -ms-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    80% {
+      -ms-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    90% {
+      -ms-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+      -ms-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
+    }
   }
 
-
-/*^^^^ !Davids Tags! ^^^^*/
+/*^^^^ !Davids Styling! ^^^^*/
 
 /* Camerons tags */
 .IndexHTML{
