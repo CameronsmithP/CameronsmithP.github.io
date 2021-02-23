@@ -142,7 +142,7 @@ justify-content: center;
 }
 */
 .Cameronscontainer{
-  position relative;
+  position: relative;
   display:flex;
   justify-content:center;
   max-width:1200px;
@@ -157,7 +157,7 @@ justify-content: center;
   margin:30px;
   box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius:15px;
-  background:rgba: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   overflow:hidden;
   display: flex;
   justify-content:center;
@@ -187,7 +187,7 @@ justify-content: center;
   position: absolute;
   top: -40px;
   right: 30px;
-  front-size: 8em;
+  font-size: 8em;
   color: rgba(255,255,255,0.05);
   pointer-events:none;
 }
@@ -199,7 +199,7 @@ justify-content: center;
 .Cameronscontainer.Cameronscard.Cameroncontent p{
   font-size: 1em;
   color:#fff;
-  font-wieght:30o;
+  font-weight:30o;
 
 }
 .Cameronscontainer.Cameronscard.Cameronscontent a{
@@ -540,7 +540,7 @@ justify-content: center;
 .Indexbody{
 background-image: url("https://media.giphy.com/media/UxTZDNv0Zej4s/giphy.gif");
 
-  display"flex;
+  display: flex;
   justify-content:center;
   align-items:center;
   flex-wrap:wrap;
@@ -855,6 +855,8 @@ display:inline-block;
 .cameronDIVT{
 margin-top: 2%;
 }
+
+
 .CameronsArticle{
 
 
