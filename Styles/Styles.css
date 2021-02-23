@@ -18,7 +18,7 @@ background-color: rgba(107, 107, 107, 0.794);
   display: flex;
 height: 500px;
 }
-.StyleHTML{
+.StyleBody{
   background-image:url("https://i.imgur.com/y18dap4.jpeg");
 
   background-size:cover;
@@ -596,7 +596,7 @@ align-content: center;
   align-content: center;
 
 }*/
-.container{
+.cardscontainer{
   position: relative;
   z-index:1;
   display:flex;
@@ -605,7 +605,7 @@ align-content: center;
   flex-wrap:wrap;
   margin:40px 0;
 }
-.container .card{
+.cardscontainer .cards{
 
   position: relative;
   width:300px;
@@ -620,7 +620,7 @@ align-content: center;
   backdrop-filter:blur(10px);
 }
 
-.container .card .content{
+.cardscontainer .cards .content{
   position: relative;
   display: flex;
   justify-content: center;
@@ -631,13 +631,13 @@ align-content: center;
   transition:0.5s;
 
 }
-.container .card:hover .content{
+.cardscontainer .cards:hover .content{
   opacity:1;
   transform: translateY(-20px);
 
 }
 
-.container .card .content .imgBx{
+.cardscontainer .cards .content .imgBx{
   position:relative;
   justify-content:center;
   align-items: center;
@@ -650,7 +650,7 @@ align-content: center;
 
 }
 
-.container .card .content .imgBx img{
+.cardscontainer .cards .content .imgBx img{
   position: absolute;
   top:0;
   left: 0;
@@ -661,7 +661,7 @@ align-content: center;
   align-content: center;
 }
 
-.container .card .content .contentBx h3{
+.cardscontainer .cards .content .contentBx h3{
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -671,14 +671,14 @@ align-content: center;
   margin:20px 0 10px;
   line-height: 1.1em;
 }
- .container .card .content .contentBx h3 span{
+ .cardscontainer .cards .content .contentBx h3 span{
    font-size:12px;
    font-weight: 300;
    text-transform: initial;
 
  }
 
- .container .card .sci{
+ .cardscontainer .cards .sci{
    align-content: center;
    position:  absolute;
    bottom: 50px;
@@ -686,7 +686,7 @@ align-content: center;
 
  }
 
- .container .card .sci li{
+ .cardscontainer .cards .sci li{
 
    list-style: none;
    margin: 0 10px;
@@ -698,12 +698,12 @@ align-content: center;
    transition-delay: calc(0.1s * var(--i))
  }
 
- .container .card:hover .sci li{
+ .cardscontainer .cards:hover .sci li{
    transform: translateY(0px);
    opacity:1;
  }
 
- .container .card .sci li a{
+ .cardscontainer .cards .sci li a{
 align-items: center;
 padding-right: 50px;
    color: #fff;
