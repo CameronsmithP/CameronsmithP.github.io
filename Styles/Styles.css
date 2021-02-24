@@ -540,11 +540,11 @@ justify-content: center;
 .Indexbody{
 background-image: url("https://media.giphy.com/media/UxTZDNv0Zej4s/giphy.gif");
 
-  display: flex;
+  /*display: flex;*/
   justify-content:center;
   align-items:center;
   flex-wrap:wrap;
-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 
 
@@ -786,7 +786,7 @@ padding-right: 50px;
     -ms-transform:  translate(1800px,1px)  ;
   }
 }
- .nav{
+/* .nav{
 
 position: fixed;
 top:0;
@@ -798,7 +798,7 @@ overflow: hidden;
 
  /* I organized the nav bar to stick to the browser window through the CSS sheet
  however David wrote the code to make the nav bar through inline style */
- .nav ul {
+ /*.nav ul {
 
    list-style-type: none;
    text-align: center;
@@ -829,7 +829,7 @@ display:inline-block;
  }
  .active{
          background-color:#4CAF50;
- }
+ }*/
 
  /*.CameronsBio #cambio{
 
@@ -887,6 +887,30 @@ margin-top: 2%;
 /*Camerons Tags ^^^^^*/
 
 /* KALLISTA'S STYLING */
+
+    /* bootstrap navbar styling */
+    nav {
+      margin: 0px 2px 2px 2px;
+    }
+    .navbar-light {
+      background-color: #136F63
+  }
+  
+  .navbar-brand {
+      font-weight:900;
+      font-size: 30px;
+      
+      
+      
+  }
+  
+  .navbar-nav {
+      
+      border-left: solid 1px black;
+      font-size: 20px;
+      font-weight: bold;
+  }
+    /* bootstrap navbar styling */
 
     /*website styling*/
     .k-section {
