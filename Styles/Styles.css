@@ -261,13 +261,18 @@ justify-content: center;
 
 
 /* !Davids Styling!*/
-#DavidPage.HTML{
+/*#DavidPage.HTML{
+  background-image: url("https://media.giphy.com/media/eNq1z1ecRi2YM/giphy.gif");
+  background-size:cover;
+  background-repeat: no-repeat;*/
+
+#DavidBody.Body{
   background-image: url("https://media.giphy.com/media/eNq1z1ecRi2YM/giphy.gif");
   background-size:cover;
   background-repeat: no-repeat;
 
-
 }
+
 .DavidTitle{
   padding-top: 30px;
   color: white;
