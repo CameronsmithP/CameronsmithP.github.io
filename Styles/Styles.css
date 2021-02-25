@@ -246,14 +246,12 @@ justify-content: center;
 /*  background-color: hsla(112, 100%, 23%, 0.28);*/
 
 
-#CameronePage.HTML{
+#BodyCam.Cameronbody{
   background-image: url("https://media.giphy.com/media/dI3D3BWfDub0Q/giphy.gif");
-
-  background-size:cover;
-  background-repeat: no-repeat;
-  margin:0;
-  padding:0;
-  font-family:'Poppins',sans-serif;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+ background-size: cover;
+font-family:'Poppins',sans-serif;
 
 
 }
@@ -275,7 +273,7 @@ justify-content: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 50pt;
 }
-  
+
 
 #profileimage{
   height: 650px;
@@ -289,23 +287,23 @@ justify-content: center;
   position: absolute;
   top:50px;
   left:100px;
-  
+
 }
 
 #d-bio {
   text-align: right;
 }
-   
+
 .DavidContentBox{
   width: 1000px;
   height: 1000px;
     background: rgba(0, 0, 0, 0.4);
     padding:40px;
-    
+
 
     margin:auto;
 
-    
+
 }
 .DavidSubContentBox{
   width: 25%;
@@ -316,17 +314,17 @@ justify-content: center;
     position: absolute;
     margin:auto;
 
-    
+
 
     color: white;
     font-family: 'Courier New',monospace;
     right: 25%;
-    
+
 }
 
 
-  
-   
+
+
 
 .dcard-animation{
     animation: dcard-keyframes linear 1s;
@@ -345,7 +343,7 @@ justify-content: center;
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%;
   }
-  
+
   @keyframes dcard-keyframes{
     0% {
       transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
@@ -381,7 +379,7 @@ justify-content: center;
       transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
     }
   }
-  
+
   @-moz-keyframes dcard-keyframes{
     0% {
       -moz-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
@@ -417,7 +415,7 @@ justify-content: center;
       -moz-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
     }
   }
-  
+
   @-webkit-keyframes dcard-keyframes {
     0% {
       -webkit-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
@@ -453,7 +451,7 @@ justify-content: center;
       -webkit-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
     }
   }
-  
+
   @-o-keyframes dcard-keyframes {
     0% {
       -o-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
@@ -489,7 +487,7 @@ justify-content: center;
       -o-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
     }
   }
-  
+
   @-ms-keyframes dcard-keyframes {
     0% {
       -ms-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
@@ -549,9 +547,8 @@ background-image: url("https://media.giphy.com/media/UxTZDNv0Zej4s/giphy.gif");
 
 
 }
-.Cameronbody #BodyC{
-  margin: 0;
-   padding: 0;
+
+
 /*  justify-content:center;
   align-items:center;
   display"flex;
@@ -561,7 +558,7 @@ background-size: cover;
   background-repeat: no-repeat; */
 
 
-}
+
 .CameronsBx{
   width: 1000px;
   height: auto;
@@ -895,17 +892,17 @@ margin-top: 2%;
     .navbar-light {
       background-color: #136F63
   }
-  
+
   .navbar-brand {
       font-weight:900;
       font-size: 30px;
-      
-      
-      
+
+
+
   }
-  
+
   .navbar-nav {
-      
+
       border-left: solid 1px black;
       font-size: 20px;
       font-weight: bold;
@@ -1232,7 +1229,7 @@ p.k-job  {
 /* Matthew's Sylings */
 .mattbc
 {
-    background-image: url(https://media.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif);
+    background-image: url("https://media.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif");
     background-repeat:no-repeat;
     background-attachment:fixed;
    background-size: cover;
