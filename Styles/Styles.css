@@ -266,7 +266,7 @@ font-family:'Poppins',sans-serif;
 
 #DavidBody.Body{
   background-image: url("https://media.giphy.com/media/eNq1z1ecRi2YM/giphy.gif");
-  background-size:cover;
+  background-size:100%;
   background-repeat: no-repeat;
 
 }
