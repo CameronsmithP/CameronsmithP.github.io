@@ -1062,7 +1062,7 @@ p.k-job  {
   border-width: .3rem;
   box-shadow: 5px 5px 3px black;
   position: absolute;
-  bottom: 1rem;
+  top: 12rem;
   left: 17.5rem;
 
 }
