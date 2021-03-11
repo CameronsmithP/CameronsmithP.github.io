@@ -48,13 +48,31 @@
   </nav>
 <!-- NAV BAR-->
 <!--Buttons-->
-
-<p id="demo">Knock Knock</p>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Html change for The Hoodlums? Thanks and sign here, here and here. Thanks Have a good one."'>Who's There?</button>
-
 <div>
+<p id="davidA">Knock Knock</p>
 
+<button type="button" onclick='document.getElementById("davidA").innerHTML = "Html change for The Hoodlums? Thanks and sign here, here and here. Thanks Have a good one."'>Who's There?</button>
+
+
+
+</div>
+<div>
+  <h3>What did you think of that knock knock joke?</h3>
+
+<input type="text" id="dmyText" size= "30px" height= "50px" value=" Enter Critical Feedback Here">
+
+<p>Click the "Feedback" button to get enter your response.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="davidB"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("dmyText").value;
+  document.getElementById("davidB").innerHTML = x + "? well I thought it was funny.";
+}
+</script>
 </div>
 
 
