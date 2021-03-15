@@ -74,7 +74,7 @@ animation: 5s rotate  linear infinite;
     --angle:360deg;
   }
 }
- @property --angle{
+ /*@property --angle{
    syntax:'<angle>';
    initial-value: 0deg;
    inherits: false;
@@ -1322,6 +1322,14 @@ margin-top: .01%;
   right: 41.65%
 
 }
+
+/*#square {
+  width: 20em;
+  height: 20em;
+  border: 2px inset gray;
+  margin-bottom: 1em;
+}
+*/
 
 @keyframes pulse {
   0% {
