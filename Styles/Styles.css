@@ -1323,13 +1323,13 @@ margin-top: .01%;
 
 }
 
-/*#square {
+#square {
   width: 20em;
   height: 20em;
   border: 2px inset gray;
   margin-bottom: 1em;
 }
-*/
+
 
 @keyframes pulse {
   0% {

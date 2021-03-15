@@ -14,8 +14,8 @@ var enemyHealth = 50;
 var gameInfo = "Play By Clicking Buttons";
 var cards = [
 
-['Card name', 1, 4, '#121212', 'https://link.to.picture'], 
-['Card name', 1, 4, '#121212', 'https://link.to.picture'], 
+['Card name', 1, 4, '#121212', 'https://link.to.picture'],
+['Card name', 1, 4, '#121212', 'https://link.to.picture'],
 ['Card name', 1, 4, '#121212', 'https://link.to.picture']
 
 ];
@@ -64,7 +64,7 @@ function enemyTurn() {
 
 function startGame() {
     playerTurnButton.removeAttribute('disabled');
-    enemyTurnButton.removeAttribute('disabled');  
+    enemyTurnButton.removeAttribute('disabled');
 }
 
 function updateDisp() {
