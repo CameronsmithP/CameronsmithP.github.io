@@ -21,6 +21,7 @@ var cardsDefense;
 var cardsName;
 var cards;
 var cardImage;
+var upgradeType;
 
 
 
@@ -242,6 +243,37 @@ function enableAllButtons() {
     upgrade.disabled = false;
 }
 function upgrade() {
+    upgradeType = parseInt(Math.random()*2);
+    console.log(upgradeType);
+    if (upgradeType == 1 ){
+        for (var i=0; i < 3;i++){
+             playerCards[i][0] += 5;
+             console.log("upgrade attack"+ playerCards[i][0]);
+             
+
+        }
+       
+        
+
+    }
+    else {
+        for (var i=0; i < 3;i++){
+            playerCards[i][1] += 5;
+            console.log("upgrade defense"+ playerCards[i][1]);
+
+       }
+
+
+        
+       
+
+    }
+    initializeCards();
+
+
+
+
+
     console.log("Upgrade");
 }
 
