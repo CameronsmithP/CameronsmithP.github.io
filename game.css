@@ -1,3 +1,39 @@
+/* bootstrap navbar styling */
+nav {
+    margin: 0px 2px 2px 2px;
+  }
+  .navbar-light {
+    background-color: #136F63
+}
+
+.navbar-brand {
+    font-weight:900;
+    font-size: 30px;
+
+
+
+}
+
+.navbar-nav {
+
+    border-left: solid 1px black;
+    font-size: 20px;
+    font-weight: bold;
+}
+  /* bootstrap navbar styling */
+
+
+  body {
+      background: url(https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=900&q=60);
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-attachment:scroll;
+  }
+
+
+
+
+
 .button-custom {
     margin: 20px;
     padding: 20px;
@@ -29,4 +65,34 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-    
+
+
+
+
+.jumbotron {
+    background-color:rgba(79, 79, 79, 0.8);
+    margin-right: 70px;
+    margin-left: 70px;
+    padding-top:1rem;
+}
+.gameTitle {
+    color: black;
+    text-align: center;
+    font-family:'Syne Mono', monospace;
+    font-size: 5rem;
+    margin-right: auto;
+}
+
+.display-4 {
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    color:#041b15;
+    font-size: 2rem;
+}
+
+.lead {
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+}
