@@ -1,0 +1,42 @@
+.card{
+    display: flex;
+    margin: 1rem 1rem;
+    width: 17rem;
+    height: 25rem;
+    background: url(https://images.unsplash.com/photo-1549645402-a9d655c5c344?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9ja3xlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+    box-shadow: 0 .5rem 1rem gray;
+    border-radius: 0.5rem;
+    border:.5rem #136f63 ridge;
+}
+
+.innercard{
+    background-color:rgba(238, 231, 231, 0.5);
+    border-style:ridge;
+    border-width: .25rem;
+    border-color:#136F63;
+    width: 14rem;
+    height: 22rem;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.char-name{
+    margin-top: .25rem;
+    margin-bottom: 0.02rem;
+    text-align: center;
+    font-family:'Syne Mono', monospace;
+}
+
+.image img {
+    width:12.5rem;
+    height: 12rem;
+    margin-left:.5rem;
+    border: black .25rem solid;
+    border-radius: 0.5rem;
+   
+}
+.card-body{
+    font-family:'Syne Mono', monospace;
+    font-weight:bold;
+    text-align: center;
+}

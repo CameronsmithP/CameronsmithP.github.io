@@ -16,7 +16,7 @@ var cardsBankLength = 100;
 var playerCards = [];
 var enemyCards = [];
 
-var cardsDamage; 
+var cardsDamage;
 var cardsDefense;
 var cardsName;
 var cards;
@@ -52,7 +52,7 @@ function playerAttack() {
 
 function playerTurn(){
     if(!gameOver()) {
-    
+
     gameOver();
     }
 }
@@ -153,7 +153,7 @@ function battle(i) {
         enemyCards[i][6] = 0; //card is dead
         cardDeath('enemy', i);
     }
-    
+
     //console.log("player cards: ", playerCards[i]);
     //console.log("enemy cards: ", enemyCards[i]);
 
@@ -177,7 +177,7 @@ function initializeCards(){
     cardImage = document.getElementsByTagName('img');
     //enemy card initializiations:
     for (var i = 0; i < 6; i++) {
-        //enemy cards: 
+        //enemy cards:
         if(i < 3) {
         //set the attack of the enemy card damage by accessing the list and assignting it the value of enemycards at first array first index
         //[[2, 3, 'aadfuaio' ], [2, 3, 'aadfuaio' ], [2, 3, 'aadfuaio' ]]
@@ -188,7 +188,7 @@ function initializeCards(){
         cardsName[i].innerHTML = enemyCards[i][2];
 
         cards[i].style.backgroundColor = enemyCards[i][3];
-        
+
         cards[i].id = "player_id_" + enemyCards[i][4];
         cardImage[i].src = enemyCards[i][5];
         }
@@ -209,20 +209,20 @@ function initializeCards(){
     }
 }
 
-function getRandomImageURL() {
- 
+ function getRandomImageURL() {
+
     var ret = "https://picsum.photos/id/";
-    var imgID = parseInt(Math.random() * 100) + "/200";
+   var imgID = parseInt(Math.random() * 100) + "/200";
     ret += imgID;
-    return ret;
+   return ret;
 }
 
-function enemyTurn() {
-    if(!gameOver()) {
+//function enemyTurn() {
+//    if(!gameOver()) {
         //enemy Turn code here:
-    gameOver();
-    }
-}
+//    gameOver();
+//    }
+//}
 
 function startGame() {
     //set up random stats for all cards:
@@ -231,7 +231,7 @@ function startGame() {
 
     //set up cards in play
     initializeCards();
-    
+
     enableAllButtons();
     upgradeButton.removeEventListener('click', startGame);
     upgradeButton.innerHTML = 'Upgrade';
@@ -239,7 +239,7 @@ function startGame() {
 }
 function enableAllButtons() {
     playerTurnButton.disabled = false;
-    doneButton.disabled = false;  
+    doneButton.disabled = false;
     upgrade.disabled = false;
 }
 function upgrade() {
@@ -249,11 +249,11 @@ function upgrade() {
         for (var i=0; i < 3;i++){
              playerCards[i][0] += 5;
              console.log("upgrade attack"+ playerCards[i][0]);
-             
+
 
         }
-       
-        
+
+
 
     }
     else {
@@ -264,8 +264,8 @@ function upgrade() {
        }
 
 
-        
-       
+
+
 
     }
     initializeCards();
