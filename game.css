@@ -40,30 +40,40 @@ nav {
 }
 
 .card-container {
-    max-width: 35rem;
+    max-width: 60rem;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: rgba(160, 72, 72, 0.609);
+    background-color: rgba(25, 76, 52, 0.72);
 }
 
 .banner-custom-enemy {
     text-align: center;
-    color: red;
-    background-color: rgba(24, 3, 98, 0.192);
+    color: black;
+    background-color: rgba(79, 79, 79, 0.8);
+    width: 350px;
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    border-radius:.75px;
+    border-style:groove;
+    border-color: black;
+    border-width: .25rem;
 }
 
 .banner-custom-player {
     text-align: center;
     color: rgb(22, 251, 240);
-    background-color: rgba(235, 37, 169, 0.192);
+    background-color: rgba(79, 79, 79, 0.8);
+    width: 350px;
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    border-radius: .75px;
+    border-style: groove;
+    border-color: black;
+    border-width: .25rem;
 }
 
 
@@ -95,4 +105,47 @@ nav {
     text-align: center;
     color: black;
     font-size: 1.5rem;
+}
+
+.ourcard{
+    display: flex;
+    margin: 1rem 1rem;
+    width: 17rem;
+    height: 25rem;
+    background: url(https://images.unsplash.com/photo-1549645402-a9d655c5c344?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9ja3xlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+    box-shadow: 0 .5rem 1rem gray;
+    border-radius: 0.5rem;
+    border:.5rem #136f63 ridge;
+}
+
+.innercard{
+    background-color:rgba(238, 231, 231, 0.5);
+    border-style:ridge;
+    border-width: .25rem;
+    border-color:#136F63;
+    width: 14rem;
+    height: 22rem;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.char-name{
+    margin-top: .25rem;
+    margin-bottom: 0.02rem;
+    text-align: center;
+    font-family:'Syne Mono', monospace;
+}
+
+.image img {
+    width:12.5rem;
+    height: 12rem;
+    margin-left:.5rem;
+    border: black .25rem solid;
+    border-radius: 0.5rem;
+   
+}
+.card-body{
+    font-family:'Syne Mono', monospace;
+    font-weight:bold;
+    text-align: center;
 }
