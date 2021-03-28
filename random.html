@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html>
+  
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
-        <link rel="stylesheet" type= 'text/css'  href="Styles.css" />
+        <!-- <link rel="stylesheet" type= 'text/css'  href="Styles.css" /> -->
 
 
 
@@ -82,6 +83,76 @@ function myFunction() {
 
 <button type= "button" id='clickMe'> Here</button>
 <!--yoooo -->
+
+<!--Random Tings-->
+<div>
+  <p><h3>Give me a range of numbers</h3></p>
+  <input type="text" id="firstNum" size= "30px" height= "50px" value=" Min">
+  <input type="text" id="secondNum" size= "30px" height= "50px" value=" Max">
+    
+  <p><button onclick="getRndInteger()">Generate Random Number In Range </button></p>
+
+  <p id="randNum"></p>
+
+  
+    <script>
+      function getRndInteger() {
+        var min = document.getElementById("firstNum").value;
+        var max = document.getElementById("secondNum").value;
+        var z = Math.floor(Math.random() * (max - min) + min );
+        
+
+  document.getElementById("randNum").innerHTML = z;
+}
+  
+      
+      
+    </script>
+</div>
+
+<div>
+  <p><h3>Enter a range to randomly draw a line!</h3></p>
+  <input type="text" id="firstNumb" size= "30px" height= "50px" value=" Min">
+  <input type="text" id="secondNumb" size= "30px" height= "50px" value=" Max">
+    
+  <p><button onclick="getRndIntegerSurprise()">Surprise </button></p>
+
+  <p id="randNumb"></p>
+
+    <div>
+      <canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+
+
+    </div>
+    <script>
+      function getRndIntegerSurprise() {
+        var mins = document.getElementById("firstNumb").value;
+        var maxs = document.getElementById("secondNumb").value;
+        var f = Math.floor(Math.random() * (maxs - mins) + mins );
+        
+
+        document.getElementById("randNumb").innerHTML = f;
+
+
+
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.moveTo(100,50);
+ctx.lineTo(f * -1,f);
+ctx.stroke();
+
+      }
+
+      
+      
+    </script>
+</div>
+
 
     </body>
     <script type="text/javascript" src="random.js"></script> 
