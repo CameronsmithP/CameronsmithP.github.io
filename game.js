@@ -22,6 +22,27 @@ var cardsName;
 var cards;
 var cardImage;
 var upgradeType;
+var CardsP = [
+  "CardGameImages/Average_GIMM_Student.png",
+  "CardGameImages/Blumbo.png",
+  "CardGameImages/Hampikian-Daniel.png",
+  "CardGameImages/Human_Pattern_Recognision.png",
+  "CardGameImages/Litterally_a_mushroom.png",
+  "CardGameImages/Wanted_familiar_wizard.png",
+  "CardGameImages/Wizard_speak_1.jpg"
+  
+];
+var CardsN = [
+
+"Average Gimm Student",
+"Blumbo",
+"Dr.Dan",
+"Human Pattern Recognition",
+"Litterally a Mushroom",
+"Familiar Wizard",
+"Wizard Speak"
+
+];
 
 
 
@@ -43,7 +64,7 @@ upgradeButton.addEventListener('click', startGame);
 
 function playerAttack() {
     if(!gameOver()) {
-    console.log("In player attack");
+
     cardBattle();
     gameOver();
     }
@@ -185,12 +206,12 @@ function initializeCards(){
         //set the defense
         cardsDefense[i].innerHTML = "Defense: " + enemyCards[i][1];
         //set the name
-        cardsName[i].innerHTML = enemyCards[i][2];
+
 
         cards[i].style.backgroundColor = enemyCards[i][3];
 
         cards[i].id = "player_id_" + enemyCards[i][4];
-        cardImage[i].src = enemyCards[i][5];
+
         }
         //player cards:
         else {
@@ -199,15 +220,27 @@ function initializeCards(){
         //set the defense
         cardsDefense[i].innerHTML = "Defense: " +  playerCards[i-3][1];
         //set the name
-        cardsName[i].innerHTML = playerCards[i-3][2];
+
 
         cards[i].style.backgroundColor = playerCards[i-3][3];
-        cardImage[i].src = playerCards[i-3][5];
+
 
         }
 
     }
 }
+function RandomCardss(){
+
+  for (i=0; i<6; i++){
+    var Randy = Math.floor(Math.random() * (7-0));
+    var CardName = document.getElementById("Name"+i);
+    var CardImage = document.getElementById("img"+i);
+    CardName.innerText=CardsN[Randy];
+    CardImage.src=CardsP[Randy];
+
+  }
+}
+
 
  function getRandomImageURL() {
 
@@ -230,7 +263,8 @@ function startGame() {
     setUpCardBanks();
 
     //set up cards in play
-    initializeCards();
+RandomCardss();
+initializeCards();
 
     enableAllButtons();
     upgradeButton.removeEventListener('click', startGame);
