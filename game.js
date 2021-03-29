@@ -29,8 +29,9 @@ var CardsP = [
   "CardGameImages/Human_Pattern_Recognision.png",
   "CardGameImages/Litterally_a_mushroom.png",
   "CardGameImages/Wanted_familiar_wizard.png",
-  "CardGameImages/Wizard_speak_1.jpg"
-  
+  "CardGameImages/Wizard_speak_1.jpg",
+  "CardGameImages/TheRobster.jpg",
+  "CardGameImages/image0.jpg"
 ];
 var CardsN = [
 
@@ -40,8 +41,9 @@ var CardsN = [
 "Human Pattern Recognition",
 "Litterally a Mushroom",
 "Familiar Wizard",
-"Wizard Speak"
-
+"Wizard Speak",
+"The Robster",
+"The Mythical Nathan"
 ];
 
 
@@ -232,7 +234,7 @@ function initializeCards(){
 function RandomCardss(){
 
   for (i=0; i<6; i++){
-    var Randy = Math.floor(Math.random() * (7-0));
+    var Randy = Math.floor(Math.random() * (9-0));
     var CardName = document.getElementById("Name"+i);
     var CardImage = document.getElementById("img"+i);
     CardName.innerText=CardsN[Randy];
