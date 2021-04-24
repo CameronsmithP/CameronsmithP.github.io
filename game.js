@@ -15,7 +15,7 @@ var gameInfo = "Play By Clicking Buttons";
 var cardsBankLength = 100;
 var playerCards = [];
 var enemyCards = [];
-
+var turns;
 var cardsDamage;
 var cardsDefense;
 var cardsName;
@@ -63,6 +63,11 @@ doneButton.addEventListener('click', done);
 const upgradeButton = document.getElementById('play');
 upgradeButton.addEventListener('click', startGame);
 
+card.addEventListener('click', flash);
+
+function flash(){
+  document.getElementById("card").style.boxShadow = "10px 20px 30px blue";
+}
 
 function playerAttack() {
     if(!gameOver()) {
@@ -71,14 +76,26 @@ function playerAttack() {
     gameOver();
     }
 }
+function disabling(){
+  upgradeButton.disabled = true;
+  doneButton.disabled = true;
+  upgradeButton.disabled = true;
+}
 
 
 function playerTurn(){
     if(!gameOver()) {
+if (turns == "Player"){
 
+
+}
     gameOver();
     }
 }
+function stopEnemyTurn(){
+
+}
+
 function setUpCardBanks() {
     for (var i = 0; i < cardsBankLength; i++) {
 
@@ -251,12 +268,16 @@ function RandomCardss(){
     ret += imgID;
    return ret;
 }
-
+function enemyTurn2(){
+  if(!gameOver()) {
+  turns ="enemy";
+  disabling();
+          //enemy Turn code here:
+     gameOver();
+      }
+}
 //function enemyTurn() {
-//    if(!gameOver()) {
-        //enemy Turn code here:
-//    gameOver();
-//    }
+//
 //}
 
 function startGame() {
